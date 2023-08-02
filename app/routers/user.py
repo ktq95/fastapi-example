@@ -48,7 +48,7 @@ def get_user():
 
     if not query_result:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
-                            detail=f"Post with id:{id} was not found")
+                            detail=f"User with id:{id} was not found")
     
     return query_result
 
@@ -59,7 +59,7 @@ def get_user(id: int):
 
     if not query_result:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
-                            detail=f"Post with id:{id} was not found")
+                            detail=f"User with id:{id} was not found")
     
     return query_result
 
